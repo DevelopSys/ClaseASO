@@ -2,7 +2,7 @@
 
 ## TEMA 2 INSTALACIONES RED / LOCALES
 ### LUNES 
-**Servidor TFTP Ubuntu Server**
+**Servidor TFTP Ubuntu Server** - http://www.developandsys.es/servidor-tfpt-ubuntu/
 ***
 1. Configuración de la tarjeta de red con una tajeta estática
 ````
@@ -57,4 +57,13 @@ option option-128 code 128 = string;
 option option-129 code 129 = text;
 next-server 192.168.1.105;
 filename "pxelinux.0";
+````
+9. Reseteo y comprobación de todos los servicios. Creacion regla en firewall para peticiones tftp
+````
+sudo systemctl restart isc-dhcp-server
+sudo systemctl restart tftpd-hpa
+// comprobación de los servicios
+sudo systemctl status isc-dhcp-server
+sudo systemctl status tftpd-hpa
+sudo ufw allow tftp
 ````
