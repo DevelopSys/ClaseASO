@@ -83,8 +83,8 @@ fixed-address 10.0.0.3
 ````
 2
 a. Para poder montar discos en Ubuntu existen dos posibilidades: 
-- montaje temporal utilizando el comando mount: la restricción de este método es que cuando la máquina se apaga el montaje deja de efectivo
-- montaje definitivo utilizando el fichero /etc/fstab
+montaje temporal utilizando el comando mount: la restricción de este método es que cuando la máquina se apaga el montaje deja de efectivo
+montaje definitivo utilizando el fichero /etc/fstab
 b. En el fichero /etc/fstab se lee cada vez que la máquina se inicia por lo que los montajes siempre serán realizados. En este fichero encontramos: elemento_a_montar punto_montaje sistema_ficheros opciones dumpl backup. El comando para poder saber el UUID de un disco es blkid -o UUID -e /dev/sdb
 3  
 a. Para poder saber todos los raid montados en el sistema se utiliza el comando mdadm --datail --scan. Para poder mostrar el detalle de un dispositivo en concreto se utiliza el comando mdadm --detail /dev/md1
