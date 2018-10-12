@@ -67,3 +67,42 @@ sudo systemctl status isc-dhcp-server
 sudo systemctl status tftpd-hpa
 sudo ufw allow tftp
 ````
+
+## JUEVES
+**Resolución del examen**
+***
+1. 
+a. Un dhcp autoritativo es aquel servicio principal dentro de una red de asignaciones. Se utiliza para asignar automáticamente IPs sobre clientes o DHCPs secundarios de forma automática
+b. El archivo de configuración es /etc/dhcp/dhcpd.conf. Para poder asignar una dirección ip se asocia la dirección a una dirección MAC mediante el siguiente código
+````
+sudo nano /etc/dhcp/dhcpd.conf
+host nombre_equipo{
+hardware ethernet AA:AA:AA:AA:AA:AA
+fixed-address 10.0.0.3
+}
+````
+2.
+a. Para poder montar discos en Ubuntu existen dos posibilidades: 
+- montaje temporal utilizando el comando mount: la restricción de este método es que cuando la máquina se apaga el montaje deja de efectivo
+- montaje definitivo utilizando el fichero /etc/fstab
+b. En el fichero /etc/fstab se lee cada vez que la máquina se inicia por lo que los montajes siempre serán realizados. En este fichero encontramos: elemento_a_montar punto_montaje sistema_ficheros opciones dumpl backup. El comando para poder saber el UUID de un disco es blkid -o UUID -e /dev/sdb
+3. 
+a. Para poder saber todos los raid montados en el sistema se utiliza el comando mdadm --datail --scan. Para poder mostrar el detalle de un dispositivo en concreto se utiliza el comando mdadm --detail /dev/md1
+b. Los raid utilizan discos dinámicos porque son aquellos que permiten que su estructura interna cambie sin tener que formatearlos. La diferencia con un básico es que este puede contener un sistema operativo ya que los bloques siempres osn los mismos
+4.
+a. Para hacer funcionar el servicio WDS es obligatorio el servicio WDS (pxe y tftp) y DHCP. Como optativos están el DNS y AD
+b. Se necesitan 2xml para poder automatizar las instalaciones. El primer xml automatiza la parte del arranque y el segundo automatiza la instalación de la imagen
+5. 
+a. El fichero /etc/inetd.conf se utiliza para configurar el funcionamiento de los servicios que realizan peticiones por puertos específicos
+b. El comando muestra: puerto_peticion datos_pasar protocolo funcionamiento usuarios_privilegios comando (opciones del comando)
+
+
+### PRÁCTICAS A ENTREGAR
+
+Realizar una aplicación que simule el funcionamiento de una calculadora:
+1. Instalación desatendida de una imagen generada por MDT
+- https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732280%28v%3dws.10%29
+- https://docs.microsoft.com/es-es/windows/deployment/windows-adk-scenarios-for-it-pros
+2. Instalación de una imagen linux en onfraestructura WDS (Syslinux)
+3. Instalación y funcionamiento de un servidor DHCOP ubuntu
+4. Montaje, error y recuperación de RAIDs en Windows (diskpart) y Ubunto (mdadm)
