@@ -1,6 +1,6 @@
 
 <a name="indice"></a>
-## PMDM
+## ASO
  - [Configuración e información del sistema](#tema1)
 	 - Windows
 		 - Información
