@@ -41,7 +41,7 @@
 		 - Redirección de puertos y pool de impresoras
 	- Linux
 		- CUPS
- - [Sistemas heterogeneos](#tema6) 
+ - [Sistemas heterogéneos](#tema6) 
  - [Scripting](#tema7) 
 
 *******
