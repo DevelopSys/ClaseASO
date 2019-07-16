@@ -43,6 +43,15 @@
 		- CUPS
  - [Sistemas heterogéneos](#tema6) 
  - [Scripting](#tema7) 
+*******
+## Instalaciones necesarias
+
+- [Windows Server 2019 / 2016 / 2012 ](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019)
+- [Windows 10](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)
+- [Windows ADK](https://support.microsoft.com/es-gt/help/4027209/oems-adk-download-for-windows-10)
+- [RSAT Windows 10](https://www.microsoft.com/es-es/download/details.aspx?id=45520)
+- [Ubuntu Server 19.04 / 18.04 / 17.04](https://ubuntu.com/download/server)
+- [Ubuntu Desktop 19.04 / 18.04 / 17.04](https://ubuntu.com/download/desktop)
 
 *******
 <a name="tema1"></a>
