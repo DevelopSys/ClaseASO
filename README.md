@@ -1,6 +1,6 @@
 
 <a name="indice"></a>
-## ASO
+## ASO - Administración de Sistemas Operativos
  - [Configuración e información del sistema](#tema1)
 	 - Windows
 		 - Información
