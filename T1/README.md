@@ -61,7 +61,7 @@
 
 <a href="http://www.developandsys.es/servidor-tfpt-ubuntu/">Instalación y configuración TFTP</a>
 
-==
+****
 
 **Prácticas a entregar**
 
