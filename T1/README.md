@@ -43,9 +43,7 @@
 
 <a href="http://www.developandsys.es/mdt-imagenes-personalizadas/">Instalación y configuraciones MDT</a>
 
-<a href=" http://www.developandsys.es/aseguramiento-la-informacion/">Instalación y configuración de RAIDS</a>
-
-
+<a href="http://www.developandsys.es/aseguramiento-la-informacion/">Instalación y configuración de RAIDS</a>
 
 
 
@@ -57,7 +55,7 @@
 
 <a href="http://www.developandsys.es/dhcp-ubuntu-server/">Instalación y configuraciones DHCP</a>
 
-<a href=" http://www.developandsys.es/aseguramiento-la-informacion/">Intsalación y configuración de RAIDS</a>
+<a href="http://www.developandsys.es/aseguramiento-la-informacion/">Instalación y configuración de RAIDS</a>
 
 <a href="http://www.developandsys.es/servidor-tfpt-ubuntu/">Instalación y configuración TFTP</a>
 
