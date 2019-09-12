@@ -35,7 +35,7 @@
 
 <a href="https://docs.microsoft.com/es-es/windows-server/manage/windows-admin-center/understand/what-is">WAS - Administración remota de equipos en una red</a>
 
-<a href="- http://www.developandsys.es/informacion-del-sistema-wserver/">Información del sistema</a>
+<a href="http://www.developandsys.es/informacion-del-sistema-wserver/">Información del sistema</a>
 
 <a href="http://www.developandsys.es/dhcp-windows-server/">Instalación y configuración DHCP</a>
 
