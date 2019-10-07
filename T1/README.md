@@ -71,4 +71,4 @@
 3. Realiza las modificaciones necesarias en WDS para que se puedan hacer instalaciones de distribuciones Linux (necesitas utilizar SysLinux<a href="https://wiki.syslinux.org/wiki/index.php?title=WDSLINUX"></a>)
 4. Instalaciones y configuraciones básicas de UbuntuServer subidas a la carpeta de Drive
 
-Todas las prácticas se entregarán en formato pdf con capturas de pantalla mínimamente explicadas. La fecha de entrega de las prácticas será el **6 de octubre** en la carpeta de Drive
+Todas las prácticas se entregarán en formato pdf con capturas de pantalla mínimamente explicadas. La fecha de entrega de las prácticas será el **14 de octubre** en la carpeta de Drive
