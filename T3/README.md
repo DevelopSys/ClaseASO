@@ -1,6 +1,6 @@
-Comandos de procesos
+# Comandos de procesos
 
-# Totales generico
+## Totales genérico
 ````
 Get-Process
 # Handlecount, ProcessName, NonpagedSystemMemorySize, PagedMemorySize, VirtualMemorySize, WorkingSet, TotalProcessorTime
@@ -27,18 +27,18 @@ Get-Process
 Get-WmiObject -Class Win32_process
 Get-ciminstance Win32_process
 ````
-# Mediciones
+## Mediciones
 ````
 Get-Process | measure -Property CPU -Sum -Average -Max -Min
 ````
-# Obtener información completa
+## Obtener información completa
 ````
 Get-Process | select -Property *
 Get-WmiObject -Class Win32_process | select -Property *
 Get-Ciminstance Win32_process | select -Property *
 ````
 
-# Filtrado
+## Filtrado
 ````
 #forma directa
 Get-Process -Id 4
@@ -50,7 +50,7 @@ Get-Process | Where-Object {$_.BasePriority -lt 10}
 Get-WmiObject -Class Win32_process | Where-Object {$_.Priority -gt 8}
 ````
 
-# Modificar prioridades
+## Modificar prioridades
 ````
 Get-Process -Name notepad | select Name,BasePriority, PriorityClass
 #las posibles prioridades son "Idle, BelowNormal, Normal, AboveNormal, High, RealTime"
