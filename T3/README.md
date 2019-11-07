@@ -12,8 +12,6 @@ Get-Process
 # CPU(s): The amount of processor time that the process has used on all processors, in seconds.
 # ID: The process ID (PID) of the process.
 # ProcessName: The name of the process. 
-Get-WmiObject -Class Win32_process
-Get-ciminstance Win32_process
 Get-Process
 Get-WmiObject -Class Win32_process
 Get-ciminstance Win32_process
