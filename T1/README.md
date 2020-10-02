@@ -61,6 +61,49 @@
 
 ****
 
+
+## Comandos RAIDS Ubuntu
+
+Particionado y formateo de particiones
+
+````
+fidsk /dev/sdb
+
+// n (nueva partición) , p(primaria) 1(número 1) seleccionar primer sector, seleccionar último sector
+// w escriber tabla de particiones
+
+mkfs.ext4 /dev/sdb1
+````
+
+Montaje temporatl
+````
+// temporal
+mount /dev/sdb1	/home/administrador/carpetaMontaje
+
+// definitivo
+
+sudo nano /etc/fstab
+// escribir la siguiente linea
+/dev/sdb1	/home/administrador/carpeta	ext4	defaults	0	0
+````
+
+Crear RAIDs
+
+// crear raid
+mdadm --create /dev/md0 --raid-level=5 --raid-devices=3 /dev/sdb1 /dev/sdc1 /dev/sdd1
+
+// informacion del raid
+mdadm --datail /dev/md0
+
+// información de los raids del sistema
+mdadm --datail --scan >> /etc/mdadm/mdadm.conf
+
+// actualizar la imagen del sistema
+update-initramfs -u
+
+// comprobar que el raid es reconocido por el sistema
+cat /proc/mdstat
+
 **Prácticas a entregar**
 
 1. Realiza el montaje de RAID 5 tanto en Windows como en Linux donde el raid original deberá tener 4 discos (dos reserva en Ubuntu). Las tareas que se deben realizar son
