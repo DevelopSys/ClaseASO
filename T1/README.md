@@ -61,8 +61,7 @@
 
 ****
 
-
-## Comandos RAIDS Ubuntu
+### Comandos RAIDS Ubuntu
 
 Particionado y formateo de particiones
 
